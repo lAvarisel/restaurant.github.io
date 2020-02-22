@@ -570,17 +570,15 @@ footer .column-2 .cards {
 		justify-content: center;
 	}
 	.promo-btns-container a {
-		margin-top: 10px;
+		width: 215px;
+    	height: 45px;
+		margin-top: 15px;
 	}
 	.wr-promo h1 {
 		font-size: 35px;
 	}
 	.wr-promo .container {
 		padding-top: 35px;
-	}
-	.promo-btns-container a {
-		width: 215px;
-    	height: 35px;
 	}
 	.promo-btns-container {
 		margin-top: 10px;

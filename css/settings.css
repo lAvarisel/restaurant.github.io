@@ -1,0 +1,32 @@
+@font-face {
+	font-family: yesevaone;
+	src: url('../fonts/YesevaOne-Regular_v2.otf');
+}
+@font-face {
+	font-family: opensans;
+	src: url('../fonts/OpenSans-Regular.ttf');
+}
+@font-face {
+	font-family: gentiumbookbasic;
+	src: url('../fonts/gentium-book-basic-bold.ttf');
+}
+@font-face {
+	font-family: latoreg;
+	src: url('../fonts/Lato-Regular.ttf');
+}
+body {
+  background-color: #fff;
+  font-family: yesevaone;
+  font-size: 16px;
+  color: #fff;
+  overflow-x: hidden;
+}
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+}
+a {
+  text-decoration: none;
+}

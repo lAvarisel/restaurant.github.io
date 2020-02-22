@@ -1,0 +1,653 @@
+@import "./reset.css";
+@import "./settings.css";
+@import "./mobile.css";
+@import "./datepicker.min.css";
+
+.promo-container {
+	height: 100vh;
+	background-image: url("../media/promo_background.jpg");
+	background-position: center;
+	background-size: cover;
+}
+header {
+	height: 120px;
+	width: 100%;
+	/* box-shadow: inset 0px 45px 20px 0px rgba(0, 0, 0, 0.35); */
+	background-image: linear-gradient(to bottom, rgba(0,0,0,0.8) 0%,rgba(255,255,255,0) 45%);
+	position: fixed;
+	z-index: 10;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+header .container {
+	height: 100%;
+	align-items: center;
+	justify-content: space-between;
+}
+.nav-container {
+	display: flex;
+	height: 100%;
+}
+.nav-container nav ul {
+	display: flex;
+	height: 100%;
+}
+nav li {
+	margin-left: 24px;
+	display: flex;
+	align-items: center;
+}
+nav a {
+	font-family: gentiumbookbasic;
+	font-size: 21px;
+	color: #fff;
+	padding: 13px;
+}
+nav a:focus {
+	outline: none;
+}
+nav .active-menu-item {
+	border-top: 3px solid #c8c5bd;
+	border-bottom: 3px solid transparent;
+}
+.social-container {
+	display: flex;
+	align-items: center;
+	margin-left: 5px;
+}
+.social-container li {
+	margin-left: 8px;
+}
+.social-container li:first-child {
+	margin-left: 0;
+}
+.social-container a {
+	padding: 3px;
+}
+.wr-promo .container {
+	flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 35px;
+    height: 100vh;
+}
+.wr-promo h1 {
+	max-width: 970px;
+	font-family: yesevaone;
+	font-size: 90px;
+	text-align: center;
+	line-height: 1.3;
+	opacity: 0.92;
+	color: #fff;
+	text-shadow: 0.5px 0.9px 2px rgba(1,1,1,0.64);
+}
+.wr-promo img {
+	width: 232px;
+	margin-top: 25px;
+}
+.promo-btns-container {
+	margin-top: 35px;
+}
+.promo-btns-container a {
+    font-family: latoreg;
+    font-size: 18px;
+    color: #fff;
+    margin-left: 15px;
+    margin-right: 15px;
+    cursor: pointer;
+    background: rgba(255,255,255, 0.2);
+		border: solid 1px #ffffff;
+		width: 230px;
+    height: 54px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.promo-btns-container a:hover {
+    border: solid 1px #000000;
+    background: rgba(0, 0, 0, 0.8);
+}
+.wr-about {
+	background-image: linear-gradient(to top left, rgba(1, 1, 1, 0.05), rgba(255,255,255, 0)), url(../media/about_background.png);
+	box-shadow: inset 0 0 50px 0 rgba(1, 1, 1, 0.14);
+}
+.wr-about .container {
+	justify-content: center;
+	align-items: center;
+	padding-top: 55px;
+	padding-left: 35px;
+	padding-bottom: 30px;
+}
+.wr-about .container .about {
+	display: flex;
+    flex-direction: column;
+	align-items: center;
+	padding-top: 47px;
+	flex-basis: 41%;
+}
+.about h2 {
+	font-family: yesevaone, sans-serif;
+	text-align: center;
+    font-size: 36px;
+    color: #cc9900;
+}
+.about .divider {
+	width: 197px;
+    height: 24px;
+    margin-top: 18px;
+}
+.about p {
+	font-family: latoreg;
+    color: #4c4c4c;
+    font-size: 16px;
+    text-align: center;
+	line-height: 1.5;
+	max-width: 415px;
+	margin-top: 25px;
+}
+.about .about-cook {
+	margin-top: 50px;
+    padding-left: 70px;
+}
+.wr-ingredients {
+	background-image: url("../media/ingredients_background.jpg");
+	background-size: cover;
+}
+.wr-ingredients .container {
+	justify-content: flex-end;
+	padding-top: 100px;
+	padding-bottom: 96px;
+}
+.ingredients-content {
+	width: 570px;
+	background-image: url("../media/ingredients_background_2.png");
+	display: flex;
+  	flex-direction: column;
+	align-items: center;
+	padding: 80px 75px;
+  	box-sizing: border-box;
+}
+.ingredients-content h2{
+	font-family: yesevaone;
+	font-size: 36px;
+	text-align: center;
+    color: #fff;
+    opacity: 0.9;
+}
+.ingredients-content .divider {
+	height: 25px;
+	margin-top: 17px;
+}
+.ingredients-content p {
+	font-family: latoreg;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #ffffff;
+	text-align: center;
+	margin-top: 23px;
+}
+.ingredients-image {
+	margin-top: 70px;
+}
+.ingredients-image img {
+	width: 100px;
+    height: 100px;
+    border-radius: 55px;
+	border: solid 5px rgba(255, 255, 255, 0.09);
+	margin-right: 10px;
+    margin-left: 10px;
+}
+.wr-menu {
+	background-image: linear-gradient(to top left, rgba(32, 90, 91, 0.05), rgba(255,255,255, 0)), url(../media/menu_background.png);
+	box-shadow: inset 0 0 50px 0 rgba(1, 1, 1, 0.14);
+}
+.wr-menu .container {
+	padding-top: 40px;
+	padding-bottom: 95px;
+	justify-content: space-around;
+}
+.menu-column {
+	max-width: 456px;
+	width: 100%;
+}
+.menu-divide {
+	margin-top: 65px;
+}
+.menu-divide p {
+	color: #4c4c4c;
+	font-family: latoreg;
+	font-size: 16px;
+	line-height: 1.5;
+	margin-top: 8px;
+
+}
+.menu-divide h3 {
+	font-size: 36px;
+	color: #cc9900;
+	text-align: center;
+}
+.menu-divide img {
+	margin: 15px auto 0;
+	display: block;
+}
+.menu-divide ul {
+	margin-top: 13px;
+}
+.menu-item-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid #c89f2d;
+	padding-bottom: 4px;
+}
+.menu-item {
+	padding: 13px 20px 0 3px;
+	position: relative;
+	margin-top: 14px;
+}
+.menu-item-active {
+	border: 1px solid #c89f2d;
+	margin-top: 26px;
+	padding-top: 3px;
+	padding-bottom: 7px;
+}
+.menu-item-active::after {
+	width: 69px;
+    height: 22px;
+    box-sizing: border-box;
+	font-size: 14px;
+	font-family: latoreg;
+	content: "Special";
+	padding: 5px 13px;
+	position: absolute;
+	top: -23px;
+	right: -1px;
+	background-image: url("../media/spec.jpg");
+}
+.menu-item-header h4, 
+.menu-item-header p {
+	font-size: 21px;
+	font-family: yesevaone;
+	color: #c89f2d;
+	margin: 0;
+}
+.special-price {
+	display: none;
+	/* background-image: url("../media/spec.jpg");
+	padding: 5px 10px; */
+	/* position: absolute;
+	top: -26px;
+	right: -1px; */
+}
+/* .menu-item-active .special-price {
+	display: inline-block;
+} */
+.wr-rewiews {
+	background-image: url("../media/reviews_background.jpg");
+	background-size: cover;
+	padding-top: 100px;
+	padding-bottom: 101px;
+}
+.wr-rewiews .container {
+	max-width: 740px;
+    background-image: url("../media/reviews_background_1.png");
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+	align-items: center;
+	padding-top: 77px;
+	padding-bottom: 104px;
+}
+.wr-rewiews .container h4 {
+	font-family: yesevaone;
+	font-size: 36px;
+	color: #fff;
+}
+.wr-rewiews .container img {
+	margin-top: 21px;
+    width: 247px;
+}
+.wr-rewiews .container span {
+	font-family: latoreg;
+    font-size: 18px;
+	opacity: 0.95;
+	margin-top: 33px;
+}
+.reviews-content {
+	display: flex;
+	margin-top: 18px;
+}
+.reviews-content p {
+    color: #dde0df;
+    font-family: gentiumbookbasic;
+    font-size: 25px;
+    max-width: 622px;
+    line-height: 1.8;
+	opacity: 0.95;
+	position: relative;
+}
+.reviews-content p::after {
+	box-sizing: border-box;
+	content: "“";
+	padding: 5px 13px;
+	position: absolute;
+	top: 3px;
+	left: -60px;
+	font-family: Georgia;
+  	font-size: 96px;
+  	line-height: 0.47;
+	color: #f2f4f4;
+	opacity: 0.7;	
+}
+.rw-reservations {
+	background-image: linear-gradient(to top, rgba(12, 52, 53, 0.05), rgba(255,255,255, 0)), url(../media/about_background.png);
+	box-shadow: inset 0 0 50px 0 rgba(1, 1, 1, 0.05);
+}
+.rw-reservations .container {
+	box-sizing: border-box;
+	padding: 103px 68px 100px 0;
+	justify-content: space-between;
+}
+.reservations-image {
+	display: flex;
+}
+.reservations-image img {
+	margin-right: 26px;
+}
+.reserv-content {
+	max-width: 435px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+	align-items: center;
+	padding-top: 6px;
+}
+.reserv-info h2 {
+	font-family: yesevaone;
+    font-size: 36px;
+    color: #cc9900;
+    line-height: 0.67;
+}
+.reserv-info img {
+	margin-top: 21px;
+}
+.reserv-info p {
+	font-family: latoreg;
+    font-size: 16px;
+    color: #4c4c4c;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+.about-reserv {
+	margin-top: 26px;
+}
+.forms-container {
+	display: flex;
+	width: 100%;
+	margin-top: 18px;
+    justify-content: space-between;
+}
+.forms-item {
+    margin-top: 25px;
+}
+.forms-item h3 {
+	font-family: opensans;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+    color: #c9a131;
+    display: block;
+}
+.forms-item input {
+	width: 200px;
+    height: 36px;
+    border: solid 1px #c8c6c6;
+    background-color: #fff;
+    font-family: opensans;
+    font-size: 16px;
+    font-style: italic;
+    text-align: left;
+	color: #7c7c7c;
+	margin-top: 7px;
+	padding-left: 15px;
+    box-sizing: border-box;
+}
+.forms-item input:hover {
+    border: solid 1px #c89f2d;
+}
+.rw-reservations button {
+	width: 200px;
+    height: 36px;
+    border: solid 1px #c89f2d;
+    background-color: #c89f2d;
+    font-family: opensans;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+    margin-top: 33px;
+    cursor: pointer;
+}
+.forms-item.calendar,
+.forms-item.select {
+	position: relative;
+}
+.forms-item.calendar::after {
+	content: url("../media/calend.png");
+	position: absolute;
+    bottom: 8px;
+    right: 9px;
+}
+input::-webkit-calendar-picker-indicator {
+    display: none;
+}
+.forms-item.select::after {
+	content: url("../media/input.png");
+	position: absolute;
+	bottom: 11px;
+    right: 17px;
+}
+footer {
+	background-color: #191919;
+}
+footer h2 {
+	color: #fefefe;
+    font-family: yesevaone;
+    font-size: 21px;
+}
+footer p {
+    color: #fff;
+    font-family: opensans;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 18px;
+}
+footer p strong {
+	font-weight: bold;
+}
+footer .container {
+    left: 0; bottom: 0;
+    text-align: center;
+    justify-content: space-between;
+	padding-top: 60px;
+    padding-bottom: 65px;
+    padding-left: 42px;
+}
+footer .column-1,
+.column-2,
+.column-3   {
+	max-width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 98px;
+}
+footer .column-1 {
+	max-width: 345px;
+	margin-right: 31px;
+}
+footer .column-2 .cards {
+	margin-top: 48px;
+}
+.footer-divider {
+	margin-top: 18px;
+}
+.foot-social-btn {
+	margin-top: 48px;
+}
+.foot-social-btn a {
+	margin: 3px;
+}
+.navShadow {
+	background-color: rgba(0,0,0,0.65);
+	height: 50px;
+}
+
+@media (max-width: 1280px) {
+    .social-container {
+        display: none;
+	}
+	footer .column-1,
+	.column-2,
+	.column-3   {
+	margin-left: 0px;
+    margin-right: 0px;
+	}
+	.rw-reservations .container {
+	padding: 103px 15px 100px 15px;
+	}
+	.reservations-image img {
+		max-width: 235px;
+	}
+}
+@media (max-width: 991px) {
+    .wr-promo h1 {
+        font-size: 56px;
+	}
+	.about-img {
+		max-width: 400px;
+	}
+	.nav-container {
+		display: none;
+	}
+	.reservations-image {
+		display: none;
+	}
+	.rw-reservations .container {
+	justify-content: center;
+	}
+	.menu-column {
+	max-width: 340px;
+	}
+	.navBurger {
+		display: block;
+	}
+}
+@media (max-width: 768px) {
+	.about-img {
+		display: none;
+	}
+	.wr-menu .container {
+		flex-direction: column;
+		align-items: center;
+	}
+	footer .container {
+		flex-direction: column;
+		align-items: center;
+	}
+	footer .column-1,
+	.column-2,
+	.column-3   {
+	margin-top: 70px;
+	}
+	.ingredients-image img {
+	margin: 0;
+	}
+}
+@media (max-width: 576px)  {
+	.promo-btns-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.promo-btns-container a {
+		margin-top: 10px;
+	}
+	.wr-promo h1 {
+		font-size: 35px;
+	}
+	.wr-promo .container {
+		padding-top: 35px;
+	}
+	.promo-btns-container a {
+		width: 215px;
+    	height: 35px;
+	}
+	.promo-btns-container {
+		margin-top: 10px;
+	}
+	.wr-about .container {
+		padding: 15px;
+	}
+	.wr-ingredients .container {
+		padding: 15px;
+	}
+	.ingredients-content,
+	.wr-menu .container,
+	.wr-rewiews {
+		padding: 15px;
+	}
+	.ingredients-image img {
+		width: 70px;
+		height: auto;
+	}
+	.ingredients-image {
+		margin-top: 40px;
+	}
+	.menu-divide {
+		margin-top: 15px;
+	}
+	.menu-item-header h4 {
+		font-size: 19px;
+	}
+	.menu-divide h3 {
+		font-size: 30px;
+	}
+	.reviews-content p::after {
+		left: -20px;
+		padding: 0;
+		font-size: 60px;
+	}
+	.reviews-content p {
+		font-size: 17px;
+	}
+	.wr-rewiews .container h4 {
+		font-size: 30px;
+	}
+	.wr-rewiews .container {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	.forms-item input {
+		width: 140px;
+		padding-left: 5px;
+		margin: 5px;
+	}
+	.reserv-info h2 {
+		font-size: 30px;
+	}
+	.rw-reservations .container {
+		padding: 50px 15px;
+	}
+	footer .container {
+		padding: 15px;
+		padding-bottom: 60px;
+	}
+	footer .column-1, 
+	.column-2, 
+	.column-3 {
+		margin-top: 50px;
+	}
+	.forms-container {
+		justify-content: center;
+	}
+}

@@ -10,55 +10,41 @@
 </head>
 
 <body>
-  <section id="section-promo" class="promo-container">
-    <header id="header_nav">
-      <div class="container">
-        <a class="logo" href="">
-          <img src="./media/logo.png" alt="logotype image">
-        </a>
-        <div class="nav-container">
-          <nav id="menu">
-            <ul>
-              <li class="active-menu-item"><a href="#section-promo">Home</a></li>
-              <li><a href="#section-about">About</a></li>
-              <li><a href="#section-ingredients">Igredients</a></li>
-              <li><a href="#section-menu">Menu</a></li>
-              <li><a href="#section-reviews">Rewiews</a></li>
-              <li><a href="#section-reservations">Reservations</a></li>
-            </ul>
-          </nav>
-          <ul class="social-container">
-            <li><a href="https://twitter.com/" target="_blank"><img src="./media/tvit.png" alt="twitter icon"></a></li>
-            <li><a href="https://www.youtube.com/" target="_blank"><img src="./media/youtube.png" alt="youtube icon"></a></li>
-            <li><a href="https://www.facebook.com/" target="_blank"><img src="./media/f.png" alt="facebook icon"></a></li>
+  <header>
+    <div class="container">
+      <a class="logo" href="">
+        <img src="./media/logo.png" alt="logotype image">
+      </a>
+      <div class="nav-container">
+        <nav id="menu">
+          <ul>
+            <li class="active-menu-item"><a href="#section-promo">Home</a></li>
+            <li><a href="#section-about">About</a></li>
+            <li><a href="#section-ingredients">Igredients</a></li>
+            <li><a href="#section-menu">Menu</a></li>
+            <li><a href="#section-reviews">Rewiews</a></li>
+            <li><a href="#section-reservations">Reservations</a></li>
           </ul>
-        </div>
-        <div class="overlay">
-          <nav class="overlayMenu">  
-              <ul role="menu">
-                  <li><a href="#section-promo" role="menuitem">Home</a></li>
-                  <li><a href="#section-about" role="menuitem">About</a></li>
-                  <li><a href="#section-ingredients" role="menuitem">Igredients</a></li>
-                  <li><a href="#section-menu" role="menuitem">Menu</a></li>
-                  <li><a href="#section-reviews" role="menuitem">Rewiews</a></li>
-                  <li><a href="#section-reservations" role="menuitem">Reservations</a></li>
-              </ul>
-          </nav>
-        </div>
-        <div class="navBurger" role="navigation" id="navToggle"></div> 
+        </nav>
+        <ul class="social-container">
+          <li><a href="https://twitter.com/" target="_blank"><img src="./media/tvit.png" alt="twitter icon"></a></li>
+          <li><a href="https://www.youtube.com/" target="_blank"><img src="./media/youtube.png" alt="youtube icon"></a></li>
+          <li><a href="https://www.facebook.com/" target="_blank"><img src="./media/f.png" alt="facebook icon"></a></li>
+        </ul>
       </div>
-    </header>
-    <section class="wr-promo">
-      <div class="container">
-        <h1>the right ingredients
-          for the right food</h1>
-        <img src="./media/promo_divider.png" alt="decorate image">
-        <div class="promo-btns-container">
-          <a href="#section-reservations">BOOK A TABLE</a>
-          <a href="#section-menu">SEE THE MENU</a>
-        </div>
+      <div class="navBurger" role="navigation" id="navToggle"></div> 
+    </div>
+  </header>
+  <section id="section-promo" class="wr-promo">
+    <div class="container">
+      <h1>the right ingredients
+        for the right food</h1>
+      <img src="./media/promo_divider.png" alt="decorate image">
+      <div class="promo-btns-container">
+        <a href="#section-reservations">BOOK A TABLE</a>
+        <a href="#section-menu">SEE THE MENU</a>
       </div>
-    </section>
+    </div>
   </section>
   <section id="section-about" class="wr-about">
     <div class="container">
@@ -252,24 +238,24 @@
               </p>
             </div>
         </div>
-        <div class="forms-container">
+        <form class="forms-container">
           <div class="reserv-forms">
             <div class="forms-item">
-                <h3>Name</h3>
+                <label>Name</label>
                 <input type="text" placeholder="your name *">
             </div>
             <div class="forms-item calendar">
-              <h3>Date</h3>
+              <label>Date</label>
               <input type="text" class="datepicker-here" placeholder="date *">
             </div>
           </div>
           <div class="reserv-forms">
             <div class="forms-item">
-              <h3>Name</h3>
+              <label>Name</label>
               <input type="text" placeholder="your email *">
             </div>
             <div class="forms-item select">
-                <h3>Party number</h3>
+                <label>Party number</label>
                 <input type="text" class="nmb-part" placeholder="party number" list="part-numb">
                 <datalist id="part-numb">
                     <option value="number 1" />
@@ -278,7 +264,7 @@
                  </datalist>
             </div>
           </div>
-        </div>
+        </form>
         <button>Book now!</button>
     </div>
     </div>
@@ -297,7 +283,7 @@
         <h2>Opening Hours</h2>
         <img class="footer-divider" src="./media/footer_divider.png">
         <p>
-            <strong>Mon-Thu:</strong> 7:00am-8:00pm <br>
+            <strong>Mon-Thu:</strong> 7:00am-8:00pm
             <strong>Fri-Sun:</strong> 7:00am-10:00pm
         </p>
         <img class="cards" src="./media/cards.png" alt="cards image">

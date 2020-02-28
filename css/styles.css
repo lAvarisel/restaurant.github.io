@@ -3,12 +3,6 @@
 @import "./mobile.css";
 @import "./datepicker.min.css";
 
-.promo-container {
-	height: 100vh;
-	background-image: url("../media/promo_background.jpg");
-	background-position: center;
-	background-size: cover;
-}
 header {
 	height: 120px;
 	width: 100%;
@@ -63,6 +57,12 @@ nav .active-menu-item {
 }
 .social-container a {
 	padding: 3px;
+}
+.wr-promo {
+	height: 100vh;
+	background-image: url("../media/promo_background.jpg");
+	background-position: center;
+	background-size: cover;
 }
 .wr-promo .container {
 	flex-direction: column;
@@ -159,7 +159,7 @@ nav .active-menu-item {
 	padding-bottom: 96px;
 }
 .ingredients-content {
-	width: 570px;
+	max-width: 570px;
 	background-image: url("../media/ingredients_background_2.png");
 	display: flex;
   	flex-direction: column;
@@ -390,7 +390,7 @@ nav .active-menu-item {
 .forms-item {
     margin-top: 25px;
 }
-.forms-item h3 {
+.forms-item label {
 	font-family: opensans;
     font-size: 14px;
     font-weight: bold;
@@ -503,9 +503,6 @@ footer .column-2 .cards {
 }
 
 @media (max-width: 1280px) {
-    .social-container {
-        display: none;
-	}
 	footer .column-1,
 	.column-2,
 	.column-3   {
@@ -519,15 +516,20 @@ footer .column-2 .cards {
 		max-width: 235px;
 	}
 }
+@media (max-width: 1055px) {
+	.navBurger {
+		display: block;
+	}
+	.nav-container {
+		display: none;
+	}
+}
 @media (max-width: 991px) {
     .wr-promo h1 {
         font-size: 56px;
 	}
 	.about-img {
 		max-width: 400px;
-	}
-	.nav-container {
-		display: none;
 	}
 	.reservations-image {
 		display: none;
@@ -537,9 +539,6 @@ footer .column-2 .cards {
 	}
 	.menu-column {
 	max-width: 340px;
-	}
-	.navBurger {
-		display: block;
 	}
 }
 @media (max-width: 768px) {

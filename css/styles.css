@@ -40,6 +40,10 @@ nav a {
 nav a:focus {
 	outline: none;
 }
+nav a:hover,
+.social-container a:hover {
+	opacity: 0.6;
+}
 nav .active-menu-item {
 	border-top: 3px solid #c8c5bd;
 	border-bottom: 3px solid transparent;
@@ -90,7 +94,8 @@ nav .active-menu-item {
 }
 .promo-btns-container a {
     font-family: latoreg;
-    font-size: 18px;
+	font-size: 18px;
+	text-transform: uppercase;
     color: #fff;
     margin-left: 15px;
     margin-right: 15px;
@@ -417,7 +422,8 @@ nav .active-menu-item {
 }
 .rw-reservations button {
 	width: 200px;
-    height: 36px;
+	height: 36px;
+	text-transform: uppercase;
     border: solid 1px #c89f2d;
     background-color: #c89f2d;
     font-family: opensans;
@@ -427,24 +433,22 @@ nav .active-menu-item {
     margin-top: 33px;
     cursor: pointer;
 }
-.forms-item.calendar,
-.forms-item.select {
-	position: relative;
+.rw-reservations button:hover {
+	border: solid 1px #000000;
+    background: rgba(0, 0, 0, 0.8);
 }
-.forms-item.calendar::after {
-	content: url("../media/calend.png");
-	position: absolute;
-    bottom: 8px;
-    right: 9px;
+.forms-item.calendar input {
+	background-image: url('../media/calend.png');
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
 }
 input::-webkit-calendar-picker-indicator {
     display: none;
 }
-.forms-item.select::after {
-	content: url("../media/input.png");
-	position: absolute;
-	bottom: 11px;
-    right: 17px;
+.forms-item.select input {
+	background-image: url('../media/input.png');
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
 }
 footer {
 	background-color: #191919;

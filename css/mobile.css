@@ -57,6 +57,7 @@
 .nav-container.overlay {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   position: fixed;
   align-items: center;
   background: #2A3140;
@@ -114,9 +115,7 @@
 }
 
 .overlayMenu {
-  /* position: absolute; */
   text-align: center;
-  /* right: 10vw; */
 }
 .overlayMenu ul {
   list-style: none;
@@ -135,6 +134,8 @@
 }
 .overlayMenu ul li a {
   display: inline-block;
+  max-width: 170px;
+  width: 100%;
   border: 1px solid rgba(255, 255, 255, 0.09);
   color: #fff;
   text-decoration: none;
@@ -147,7 +148,6 @@
 .overlayMenu ul li a:hover, .overlayMenu ul li a:active, .overlayMenu ul li a:focus {
   -webkit-transform: translateX(-2px);
           transform: translateX(-2px);
-  padding-left: 80px;
   outline: 1px solid rgba(255, 255, 255, 0.3);
   background: rgba(255, 255, 255, 0.03);
 }
@@ -155,7 +155,6 @@
 .locked {
   overflow: hidden;
 }
-
 @-webkit-keyframes fadeInRight {
   0% {
     opacity: 0;
@@ -168,7 +167,6 @@
             transform: rotate(0deg);
   }
 }
-
 @keyframes fadeInRight {
   0% {
     opacity: 0;
